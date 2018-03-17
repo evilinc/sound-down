@@ -14,7 +14,7 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
         type: 'mp3'
     });
 }, {
-    urls: ['http://*/*.mp3*', 'https://*/*.mp3*', 'http://zhangmenshiting.qianqian.com/data2/music/3423b48bd35de901b3512fc1f28cd2e3/567299874/567299874.mp3?xcode=98cbcc9d62291a1d2bb21879f3eb947d']
+    urls: ['http://*/*.mp3*', 'https://*/*.mp3*']
 }, ['blocking']);
 
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
@@ -55,8 +55,8 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 }, {
     urls: ['http://*/*.mp4*', 'https://*/*.mp4*']
 }, ['blocking']);
-/**一些其他的杂类网站，没有后缀的那种 */
 
+/**一些其他的杂类网站，没有后缀的那种 */
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
     if (request.type != 'media') {
         return false;
@@ -67,5 +67,5 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
         type: 'other'
     });
 }, {
-    urls: ['http://*.pstatp.com/obj/*']
+    urls: ['http://*.pstatp.com/obj/*' /*抖音*/ ]
 }, ['blocking']);
