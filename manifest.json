@@ -1,0 +1,30 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "__MSG_name__",
+  "version": "20180317",
+  "description": "__MSG_description__",
+  "manifest_version": 2,
+  "permissions": ["contextMenus", "webRequest", "activeTab", "tabs", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["js/bg.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["js/jquery-2.0.2.min.js", "js/content.js"],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": [
+    "images/music16.png",
+    "images/music24.png",
+    "images/music32.png",
+    "images/music48.png"
+
+  ],
+  "icons": {
+    "16": "images/music16.png",
+    "48": "images/music48.png",
+    "128": "images/music128.png"
+  },
+  "default_locale": "zh_CN"
+}

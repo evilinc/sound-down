@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Audio robber"
+  },
+  "description": {
+    "message": "Chrome extension to download any music what you sound."
+  },
+  "moveleft": {
+    "message": "down load"
+  }
+}
