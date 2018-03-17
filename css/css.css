@@ -1,6 +1,51 @@
-.boy-music-down {
+.boy-music-button {
     position: fixed;
     left: 20px;
-    top:50%;
+    top: 50%;
     width: 32px;
+    z-index: 998;
+    display: none;
+}
+
+.boy-music-info {
+    position: fixed;
+    left: 20px;
+    width: 120px;
+    top: 50%;
+    z-index: 999;
+    background: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+    border: solid 2px #f60;
+}
+
+.boy-music-close {
+    width: 20px;
+    height: 20px;
+    border-top: solid 2px #f60;
+    border-right: solid 2px #f60;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    right: -10px;
+    top:-10px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.boy-music-url {
+    min-height: 40px;
+    max-width: 100px;
+    word-break: break-all;
+    font-size: 12px;
+}
+
+.boy-music-down {
+    width: 100%;
+    height: 30px;
+    background: #f60;
+    color: #fff;
 }
