@@ -4,7 +4,7 @@
 ![browser](https://img.shields.io/badge/browser-chrome-brightgreen.svg)
 ![auther](https://img.shields.io/badge/auther-44886-brightgreen.svg)
 
-下载你在浏览器中能听到的任何声音。当然，刚刚更新后，能下载的不止声音了，还有一些小视频，比如：抖音、美拍、秒拍等。
+下载你在浏览器中能听到的任何声音。当然，刚刚更新后，能下载的不止声音了，还有一些小视频，比如：抖音、美拍、秒拍、echo回声等。
 
 ***
 

@@ -39,7 +39,7 @@ $(function () {
     });
     /**监听下载按钮 */
     $('body').on('click', '#boy-music-down', function () {
-        window.location = music_url;
+        window.open(music_url);
     });
     /**如果音乐详情页面已经打开，那么要用本方法来动态更改里面的数据 */
 });
