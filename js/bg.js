@@ -62,12 +62,11 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
     if (request.type != 'media') {
         return false;
     }
-    console.log(request);
     var url = decodeURIComponent(request.url);
     chrome.tabs.sendMessage(request.tabId, {
         url: url,
         type: 'other'
     });
 }, {
-    urls: ['http://*.pstatp.com/obj/*' /*抖音*/ , 'https://*/*', 'http://*/*' /*算了，只要是media，全都抓*/ ]
+    urls: ['http://*.pstatp.com/obj/*' /*抖音*/  ]
 }, ['blocking']);
