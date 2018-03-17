@@ -20,13 +20,14 @@ chrome.runtime.onMessage.addListener(
 function showButton() {
     $('#boy-music-button').fadeIn();
     $('#boy-music-url').html(music_url);
+    $('#boy-music-href').attr('href', music_url);
 }
 /**一些按钮的事件监听 */
 $(function () {
 
     /**将按钮加入页面 */
     $('body').append('<div class="boy-music-button" id="boy-music-button"><img src="' + button_image + '" /></div>');
-    $('body').append('<div class="boy-music-info" id="boy-music-info"><div class="boy-music-close" id="boy-music-close">x</div><textarea class="boy-music-url" id="boy-music-url">' + music_url + '</textarea><button class="boy-music-down" id="boy-music-down">下载</buttton></div>');
+    $('body').append('<div class="boy-music-info" id="boy-music-info"><div class="boy-music-close" id="boy-music-close">x</div><textarea class="boy-music-url" id="boy-music-url">' + music_url + '</textarea><button class="boy-music-down" id="boy-music-down">下载</button><a href="' + music_url + '" class="boy-music-href" id="boy-music-href">右键点我->另存为</a></div>');
     /**为了防止监听过早，所以把点击事件放在了这里面 */
     /**监听外面那个按钮 */
     $('body').on('click', '#boy-music-button', function () {
