@@ -1,11 +1,14 @@
 # 音频大盗
-下载你在浏览器中能听到的任何声音。当然，刚刚更新后，能下载的不止声音了，还有一些小视频，比如：抖音、美拍、秒拍等。
 
 ![down](https://img.shields.io/badge/download-1K-brightgreen.svg)
 ![browser](https://img.shields.io/badge/browser-chrome-brightgreen.svg)
 ![auther](https://img.shields.io/badge/auther-44886-brightgreen.svg)
 
-是的，不区分网站，只要你在浏览器中播放了声音，本扩展就能拿下它的真实地址，让你下载。
+下载你在浏览器中能听到的任何声音。当然，刚刚更新后，能下载的不止声音了，还有一些小视频，比如：抖音、美拍、秒拍等。
+
+***
+
+是的，不区分网站，只要你在浏览器中播放了声音(小视频)，本扩展就能拿下它的真实地址，让你下载。
 
 举个小例子吧！这个网站（乱找的一个），进入播放声音的页面后，先试听一下（有些网站也不用试听，为了保险，就叫大家都试听了）。
 
@@ -20,6 +23,7 @@
 ![示例图片](http://cdn.44886.com/tools/image/1521262851675_10fb15c77258a991b0028080a64fb42d.png)
 
 可以一键下载。
+
 
 # 下载
 如果你仅仅只想使用本工具，请 [点击下载](https://raw.githubusercontent.com/44886/sound-down/master/release/sound-down.crx)。
