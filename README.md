@@ -22,7 +22,7 @@
 可以一键下载。
 
 # 下载
-如果你仅仅只想使用本工具，请点击下载。
+如果你仅仅只想使用本工具，请 [点击下载](https://raw.githubusercontent.com/44886/sound-down/master/release/sound-down.crx)。
 
 下载后，将文件拖到你浏览器的 [`扩展页面`](chrome://extensions) 页面。
 
