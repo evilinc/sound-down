@@ -5,7 +5,7 @@
   "description": {
     "message": "Chrome extension to download any music what you sound."
   },
-  "moveleft": {
+  "down": {
     "message": "down load"
   }
 }
