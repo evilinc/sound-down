@@ -26,7 +26,7 @@ $(function () {
 
     /**将按钮加入页面 */
     $('body').append('<div class="boy-music-button" id="boy-music-button"><img src="' + button_image + '" /></div>');
-    $('body').append('<div class="boy-music-info" id="boy-music-info"><div class="boy-music-close" id="boy-music-close">x</div><text class="boy-music-url" id="boy-music-url">' + music_url + '</text><button class="boy-music-down" id="boy-music-down">下载</buttton></div>');
+    $('body').append('<div class="boy-music-info" id="boy-music-info"><div class="boy-music-close" id="boy-music-close">x</div><textarea class="boy-music-url" id="boy-music-url">' + music_url + '</textarea><button class="boy-music-down" id="boy-music-down">下载</buttton></div>');
     /**为了防止监听过早，所以把点击事件放在了这里面 */
     /**监听外面那个按钮 */
     $('body').on('click', '#boy-music-button', function () {

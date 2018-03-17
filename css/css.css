@@ -37,8 +37,9 @@
 }
 
 .boy-music-url {
+    width: 100%;
     min-height: 40px;
-    max-width: 100px;
+    max-height: 200px;
     word-break: break-all;
     font-size: 12px;
 }
@@ -48,4 +49,5 @@
     height: 30px;
     background: #f60;
     color: #fff;
+    border: none;
 }
