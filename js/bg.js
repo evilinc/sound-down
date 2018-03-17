@@ -49,9 +49,23 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
     }
     var url = decodeURIComponent(request.url);
     chrome.tabs.sendMessage(request.tabId, {
-        greeting: url,
+        url: url,
         type: 'mp4'
     });
 }, {
     urls: ['http://*/*.mp4*', 'https://*/*.mp4*']
+}, ['blocking']);
+/**一些其他的杂类网站，没有后缀的那种 */
+
+chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
+    if (request.type != 'media') {
+        return false;
+    }
+    var url = decodeURIComponent(request.url);
+    chrome.tabs.sendMessage(request.tabId, {
+        url: url,
+        type: 'other'
+    });
+}, {
+    urls: ['http://*.pstatp.com/obj/*']
 }, ['blocking']);
