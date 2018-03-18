@@ -58,7 +58,7 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 
 /**一些其他的杂类网站，没有后缀的那种 */
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
-
+    console.log(request);
     if (request.type != 'media') {
         return false;
     }
@@ -70,6 +70,6 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 }, {
     urls: [
         'http://*.pstatp.com/obj/*', /*抖音*/
-        'https://*.ixigua.com/*', /**这也是抖音，不知道为什么是 ixigua */
+        'http://*.ixigua.com/*', /**这也是抖音，不知道为什么是 ixigua */
     ]
 }, ['blocking']);
