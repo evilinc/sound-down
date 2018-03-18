@@ -68,5 +68,8 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
         type: 'other'
     });
 }, {
-    urls: ['http://*.pstatp.com/obj/*' /*抖音*/  ]
+    urls: [
+        'http://*.pstatp.com/obj/*', /*抖音*/
+        'https://*.ixigua.com/*', /**这也是抖音，不知道为什么是 ixigua */
+    ]
 }, ['blocking']);
