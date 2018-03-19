@@ -4,6 +4,8 @@
  * 44886
  * https://github.com/44886/sound-down
  */
+/**支持的一些type*/
+var types = ['media', 'video/mp4', 'object'];
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
     if (request.type != 'media') {
         return false;
@@ -56,8 +58,7 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 }, ['blocking']);
 
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
-    console.log(request.type);
-    if (request.type != 'media' && request.type != 'video/mp4' && request.type != 'object') {
+    if (types.indexOf(request.type) == -1) {
         return false;
     }
     var url = decodeURIComponent(request.url);
