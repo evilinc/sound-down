@@ -16,6 +16,18 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 }, {
     urls: ['http://*/*.mp3*', 'https://*/*.mp3*']
 }, ['blocking']);
+chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
+    if (request.type != 'media') {
+        return false;
+    }
+    var url = decodeURIComponent(request.url);
+    chrome.tabs.sendMessage(request.tabId, {
+        url: url,
+        type: 'wav'
+    });
+}, {
+    urls: ['http://*/*.wav*', 'https://*/*.wav*']
+}, ['blocking']);
 
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
     if (request.type != 'media') {
