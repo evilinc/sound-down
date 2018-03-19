@@ -56,7 +56,7 @@ chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request)
 }, ['blocking']);
 
 chrome.webRequest.onBeforeRequest.addListener(function interceptRequest(request) {
-    if (request.type != 'media') {
+    if (request.type != 'media' || request.type != 'video/mp4') {
         return false;
     }
     var url = decodeURIComponent(request.url);
