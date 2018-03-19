@@ -1,7 +1,7 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "__MSG_name__",
-  "version": "2018.03.17",
+  "version": "2018.03.19",
   "description": "__MSG_description__",
   "manifest_version": 2,
   "permissions": ["contextMenus", "webRequest", "activeTab", "tabs", "webRequestBlocking", "<all_urls>"],
